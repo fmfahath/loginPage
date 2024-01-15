@@ -1,28 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background: url(images/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    background-color: rgba(39,39,39,0.4);
+    background-color: rgba(39, 39, 39, 0.4);
 }
 
 
-/* navbar--------------------------------------------------- */
-.nav{
+/* navbar--------------------------------- ------------------ */
+.nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,30 +31,31 @@ body{
     width: 100%;
     height: 100px;
     line-height: 100px;
-    background: linear-gradient(rgba(39,39,39,0.6), transparent);
-    z-index:    100;
+    /* padding: 40px 20px; */
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+    z-index: 100;
 }
 
-.nav-logo a p{
+.nav-logo a p {
     color: white;
     font-size: 25px;
     font-weight: 600;
     cursor: pointer;
 }
 
-.nav-logo a{
+.nav-logo a {
     text-decoration: none;
 }
 
-.nav-menu ul{
+.nav-menu ul {
     display: flex;
 }
 
-.nav-menu ul li{
+.nav-menu ul li {
     list-style-type: none;
 }
 
-.nav-menu ul li .link{
+.nav-menu ul li .link {
     text-decoration: none;
     font-weight: 500;
     color: #ffff;
@@ -63,11 +64,12 @@ body{
     transition: .3s ease;
 }
 
-.link:hover, .active{
+.link:hover,
+.active {
     border-bottom: 2px solid #fff;
 }
 
-.nav-button .btn{
+.nav-button .btn {
     width: 130px;
     height: 40px;
     font-weight: 500;
@@ -77,42 +79,47 @@ body{
     cursor: pointer;
 }
 
-.btn:hover{
-    background: rgba(255, 255, 255, 0.3); 
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
-#registerBtn{
+#registerBtn {
     margin-left: 15px;
 }
 
-.btn.whiteBtn{
-    background: rgba(255, 255, 255, 0.7); 
+.btn.whiteBtn {
+    background: rgba(255, 255, 255, 0.7);
 }
 
-.btn.whiteBtn:hover{
-    background: rgba(255, 255, 255, 0.5); 
+
+.btn.whiteBtn:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
-.nav-menu-btn{
+.nav-menu-btn {
     display: none;
+    cursor: pointer;
+}
+
+.nav-menu-btn i {
+    color: #fff;
+    font-size: 30px;
 }
 
 /* form box---------------------------------------------- */
-.form-box{
+.form-box {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 512px;
     height: 420px;
-    border: 1px solid #ffff;
-    border-radius: 30px;
     overflow: hidden;
     z-index: 2;
 }
 
 /* registration */
-.register-container{
+.register-container {
     position: absolute;
     right: -520px;
     width: 500px;
@@ -121,7 +128,7 @@ body{
     transition: .4s ease-in-out;
 }
 
-.top span{
+.top span {
     color: #fff;
     font-size: small;
     padding: 10px 0;
@@ -129,25 +136,25 @@ body{
     justify-content: center;
 }
 
-.top span a{
+.top span a {
     color: #fff;
     font-weight: 500;
     margin-left: 10px;
 }
 
-header{
+header {
     color: #fff;
     font-size: 30px;
     text-align: center;
     padding: 10px 0 30px 0;
 }
 
-.two-forms{
+.two-forms {
     display: flex;
     gap: 10px;
 }
 
-.input-field{
+.input-field {
     font-size: 15px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -160,22 +167,23 @@ header{
     transition: .2s ease;
 }
 
-.input-field:hover, .input-field:focus{
+.input-field:hover,
+.input-field:focus {
     background: rgba(255, 255, 255, 0.3);
 }
 
-::-webkit-input-placeholder{
-    color: rgba(255,255,255,0.7);
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.input-box i{
+.input-box i {
     position: relative;
     top: -35px;
-    left:17px;
+    left: 17px;
     color: #fff;
 }
 
-.submit{
+.submit {
     font-size: 15px;
     font-weight: 500;
     color: black;
@@ -189,12 +197,12 @@ header{
     transition: .3s ease-in-out;
 }
 
-.submit:hover{
+.submit:hover {
     background: rgba(255, 255, 255, 0.85);
-    box-shadow: 1px 5px 7px 1px rgba(0,0,0,0.2);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
-.two-col{
+.two-col {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
@@ -203,22 +211,22 @@ header{
     font-size: small;
 }
 
-.two-col .one{
+.two-col .one {
     display: flex;
     gap: 10px;
 }
 
-.two-col .two a{
+.two-col .two a {
     text-decoration: none;
     color: #fff;
 }
 
-.two-col .two a:hover{
+.two-col .two a:hover {
     text-decoration: underline;
 }
 
 /* login------ */
-.login-container{
+.login-container {
     position: absolute;
     left: 4px;
     width: 500px;
@@ -227,4 +235,57 @@ header{
     transition: .4s ease-in-out;
 }
 
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        min-height: 100vh;
+    }
 
+    .nav {
+        /* justify-content: space-between; */
+        /* height: 70px; */
+        /* line-height: 70px; */
+        /* padding: 0 20px; */
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100px;
+        top: -1000px;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu-btn {
+        display: block;
+    }
+
+    .nav-menu-btn i {
+       padding: 10px;
+       background: rgba(255, 255, 255, 0.2);
+       border-radius: 50%;
+       cursor: pointer;
+       transition: .3s;
+    }
+
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+
+
+}
