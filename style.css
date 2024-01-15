@@ -281,3 +281,18 @@ header {
     }
 }
 
+@media only screen and (max-width: 520px){
+    .wrapper{
+        height: 100vh;
+    }
+
+    .form-box{
+        width: 100%;
+    }
+
+    .register-container, .login-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+}
