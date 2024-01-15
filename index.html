@@ -26,16 +26,17 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn whiteBtn" id="loginBtn">Log In</button>
-                <button class="btn" id="registerBtn">Sign Up</button>
+                <button class="btn whiteBtn" id="loginBtn" onclick="login()">Log In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
             </div>
             <div class="nav-menu-btn">
-                <i class='bx bx-menu'></i>
+                <i class='bx bx-menu' onclick="menuFunction()"></i>
             </div>
         </nav>
 
         <!-- form box -->
         <div class="form-box">
+            
             <!-- registration form -->
             <div class="register-container" id="register">
                 <div class="top">
@@ -73,6 +74,36 @@
                     </div>
                     <div class="two">
                         <label><a href="#">Terms & Conditions</a></label>
+                    </div>
+                </div>
+            </div>
+
+             <!-- login form -->
+             <div class="login-container" id="login">
+                <div class="top">
+                    <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                    <header>Log In</header>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" class="input-field" placeholder="Username or Email">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="Submit" class="submit" value="Log In" onclick="login()">
+                </div>
+
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Forgot Password?</a></label>
                     </div>
                 </div>
             </div>
