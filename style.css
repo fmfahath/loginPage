@@ -236,24 +236,13 @@ header {
 }
 
 @media only screen and (max-width: 800px) {
-    .wrapper {
-        min-height: 100vh;
-    }
-
-    .nav {
-        /* justify-content: space-between; */
-        /* height: 70px; */
-        /* line-height: 70px; */
-        /* padding: 0 20px; */
-    }
-
     .nav-button {
         display: none;
     }
 
     .nav-menu {
         position: absolute;
-        top: 100px;
+        /* top: 100px; */
         top: -1000px;
         width: 100%;
         height: 70vh;
@@ -262,8 +251,13 @@ header {
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        transition: .3s;
+        transition: .4s;
     }
+
+    .nav-menu-show{
+        top: 100px;
+    }
+    
 
     .nav-menu ul {
         flex-direction: column;
@@ -285,7 +279,5 @@ header {
     .nav-menu-btn i:hover{
         background: rgba(255, 255, 255, 0.1);
     }
-
-
-
 }
+

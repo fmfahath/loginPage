@@ -2,6 +2,7 @@ let loginBtn = document.getElementById('loginBtn');
 let registerBtn = document.getElementById('registerBtn');
 let registerEl = document.getElementById('register');
 let loginEl = document.getElementById('login');
+let navMenuEl = document.getElementById('nav-menu');
 
 
 function login(){
@@ -18,3 +19,6 @@ function register(){
     registerBtn.classList.add('whiteBtn');
 }
 
+function menuFunction(){
+    navMenuEl.classList.toggle('nav-menu-show');
+}
