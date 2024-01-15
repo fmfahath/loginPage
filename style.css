@@ -41,6 +41,7 @@ body {
     font-size: 25px;
     font-weight: 600;
     cursor: pointer;
+    /* background-color: aqua; */
 }
 
 .nav-logo a {
@@ -99,11 +100,7 @@ body {
 .nav-menu-btn {
     display: none;
     cursor: pointer;
-}
-
-.nav-menu-btn i {
-    color: #fff;
-    font-size: 30px;
+    /* background-color: antiquewhite; */
 }
 
 /* form box---------------------------------------------- */
@@ -254,10 +251,10 @@ header {
         transition: .4s;
     }
 
-    .nav-menu-show{
+    .nav-menu-show {
         top: 100px;
     }
-    
+
 
     .nav-menu ul {
         flex-direction: column;
@@ -265,48 +262,63 @@ header {
     }
 
     .nav-menu-btn {
-        display: block;
+        /* display: block; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 30px;
     }
 
     .nav-menu-btn i {
-       padding: 10px;
-       background: rgba(255, 255, 255, 0.2);
-       border-radius: 50%;
-       cursor: pointer;
-       transition: .3s;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
     }
 
-    .nav-menu-btn i:hover{
+    .nav-menu-btn i:hover {
         background: rgba(255, 255, 255, 0.1);
     }
 }
 
-@media only screen and (max-width: 520px){
-    .wrapper{
+@media only screen and (max-width: 520px) {
+    .wrapper {
         height: 100vh;
     }
 
-    .form-box{
+    .form-box {
         width: 100%;
     }
 
-    .register-container, .login-container {
+    .register-container,
+    .login-container {
         width: 100%;
         padding: 0 20px;
     }
 
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
     .nav-menu ul li {
         line-height: 80px;
     }
-    .form-box{
+
+    .form-box {
         height: 600px;
     }
 
-    .register-container .two-forms{
+    .register-container .two-forms {
         flex-direction: column;
         gap: 0;
+    }
+
+    .nav-menu-btn {
+        font-size: 20px;
+    }
+
+    .nav-logo a p {
+        font-size: 20px;
     }
 }
