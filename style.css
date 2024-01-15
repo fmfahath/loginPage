@@ -296,3 +296,17 @@ header {
     }
 
 }
+
+@media only screen and (max-width: 400px){
+    .nav-menu ul li {
+        line-height: 80px;
+    }
+    .form-box{
+        height: 600px;
+    }
+
+    .register-container .two-forms{
+        flex-direction: column;
+        gap: 0;
+    }
+}
