@@ -4,6 +4,10 @@
   
 <br><br>
 
+<a href="https://fmfahath.github.io/loginPage/" style="background-color:red; color: white; padding:10px">Live View</a>
+
+<br><br>
+
 ![image](https://github.com/fmfahath/loginPage/assets/95971934/2f0b9a6f-7e7f-4993-8d6b-85fd14bcdfc6)
 ![image](https://github.com/fmfahath/loginPage/assets/95971934/7c446c46-3aa5-4813-8ca2-97386454b06b)
 
